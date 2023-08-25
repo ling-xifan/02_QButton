@@ -4,6 +4,8 @@
 #include <QMainWindow>
 // Introducting the QPushButton class
 #include <QPushButton>
+#include <QToolBar>
+#include <QToolButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +23,11 @@ private:
     //Declare two QPushButton objects
     QPushButton *pushButton1;
     QPushButton *pushButton2;
+
+    //Declare a QToolButton object
+    QToolButton *toolButton;
+    //Declare a QToolBar obiect
+    QToolBar *toolBar;
 
 private slots:
     //Declare two slot functions
