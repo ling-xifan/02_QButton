@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+// Introducting the QPushButton class
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +18,13 @@ public:
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
+    //Declare two QPushButton objects
+    QPushButton *pushButton1;
+    QPushButton *pushButton2;
+
+private slots:
+    //Declare two slot functions
+    void pushButton1Clicked();
+    void pushButton2Clicked();
 };
 #endif // MAINWINDOW_H
